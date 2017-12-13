@@ -1,0 +1,7 @@
+lane :test_code_bump do
+  bump_android_version(manifest_path: "./example/app/src/main/AndroidManifest.xml")
+end
+
+lane :test_patch_bump do
+  bump_android_version(bump_version_code: "yes", manifest_path: "./example/app/src/main/AndroidManifest.xml")
+end
